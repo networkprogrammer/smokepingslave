@@ -28,7 +28,7 @@ sed -i "s~#slavename#~$slavename~g" smokeping.conf
 echo $3 >  slavesecrets.conf
 sudo timedatectl set-timezone America/Los_Angeles
 sudo apt-get -yqq install --no-install-recommends smokeping
-sudo apt-get -yqq install supervisor dnsutils tcptraceroute
+sudo apt-get -yqq install supervisor dnsutils tcptraceroute echoping
 sudo cp tcpping /usr/local/bin/tcpping
 sudo chmod +x /usr/local/bin/tcpping
 sudo cp smokeping.conf  /etc/supervisor/conf.d/smokeping.conf 
