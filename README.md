@@ -1,5 +1,6 @@
 # smokepingslave
-Scripts to install smokeping in slave mode
+Scripts to install smokeping in slave mode.
+
 To install first update permissions for installer.sh with 
 
 chmod +x installer.sh
