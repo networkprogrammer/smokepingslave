@@ -37,8 +37,9 @@ sudo chmod 700 /etc/smokeping/slavesecrets.conf
 sudo service smokeping stop
 sudo systemctl disable smokeping
 sudo systemctl enable supervisor
+sudo systemctl start supervisor
 sudo crontab -l >> scheduling
-sudo crontab schedulingsudo systemctl start supervisor
+sudo crontab scheduling
 sleep 30
 tail -n 20 /var/log/syslog
 
